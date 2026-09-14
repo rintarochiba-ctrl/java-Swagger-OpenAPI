@@ -113,11 +113,6 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
 
-  # TODO: 以下のエンドポイントを定義してください
-  # POST /api/users - ユーザー作成
-  # PUT /api/users/{id} - ユーザー更新
-  # DELETE /api/users/{id} - ユーザー削除
-
 components:
   schemas:
     User:
@@ -149,8 +144,7 @@ components:
           format: date-time
           description: 更新日時
           example: "2024-01-01T00:00:00Z"
-    # TODO: 以下のスキーマを定義してください
-    # UserRequest, Error など
+
     UserRequest:
       type: object
       description: ユーザー作成・更新リクエスト
@@ -183,9 +177,6 @@ components:
           description: エラーメッセージ
           example: "ユーザー名は必須です"
 
-
-  # TODO: 以下の共通レスポンスを定義してください
-  # BadRequest, NotFound, InternalServerError など
   responses:
     BadRequest:
       description: リクエスト不正（入力エラー等）
